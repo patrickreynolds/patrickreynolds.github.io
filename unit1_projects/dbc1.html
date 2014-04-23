@@ -1,14 +1,3 @@
-<!--
-- Doctype, head, title, and body *
-- Add one heading of each level (h1-h6) *
-- 2-3 short paragraphs *
-- Some italic and bold text *
-- Links that open in the same window, a new window and link to an e-mail address. *
-- Images and an image that's also a link *
-- Line break *
-- Unordered list and an ordered list *
--->
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -16,19 +5,20 @@
 		<link rel="stylesheet" type="text/css" href="stylesheets/dbc1.css">
 	</head>
 	<body>
-		<h1>Largest</h1>
-		<h2>Larger</h2>
-		<h3>Large</h3>
-		<h4>Small</h4>
-		<h5>Smaller</h5>
-		<h6>Smallest</h6>
+	<header>
+		<h1>DBC::Unit_1::4 - Beginning HTML and CSS</h1>
+	</header>
 
-		<p>Since I have no idea what we're supposed to write about in these paragraphs, I'll tell you a little bit about one of my passions - Traveling. I've always wanted to travel abroad, and the summer after my freshman year of college I finally got the opportunity to take the plunge. It was great because I got the opportunity to backback numerous countries and study in Spain for the last half of my trip. I was even lucky enough to see Spain win the world cup while I was there. Yes, the <b>World Cup</b>. <br /><br />It was pretty awesome to say the least. I constantly get asked what were my favorite countries, and even though it's practically impossible to answer that, to make things less complicated I usually say:</p>
-		<ol>
-			<li>Spain<a href="https://www.google.com/search?q=spain&source=lnms&tbm=isch&sa=X&ei=HN1WU8OxLIKLyAS5-oG4DQ&ved=0CAYQ_AUoAQ&biw=1420&bih=762"><img class="flag_image" src="images/spain_flag.gif" /></a></li>
-			<li>Germany<a href="https://www.google.com/search?q=germany&es_sm=91&source=lnms&tbm=isch&sa=X&ei=bN1WU8iuF9KRyASnpYGIDg&ved=0CAgQ_AUoAQ&biw=1420&bih=762"><img class="flag_image" src="images/germany_flag.gif" /></a></li>
-			<li>Switzerland<a href="https://www.google.com/search?q=germany&es_sm=91&source=lnms&tbm=isch&sa=X&ei=bN1WU8iuF9KRyASnpYGIDg&ved=0CAgQ_AUoAQ&biw=1420&bih=762#q=switzerland&tbm=isch"><img class="flag_image" src="images/switzerland_flag.jpeg" /></a></li>
-		</ol>
+	<section class="travels">
+		<p>Since I have no idea what we're supposed to write about in these paragraphs, I'll tell you a little bit about one of my passions - Traveling. I've always wanted to travel abroad, and the summer after my freshman year of college I finally got the opportunity to take the plunge. It was great because I got the opportunity to backback numerous countries and study in Spain for the last half of my trip. I was even lucky enough to see Spain win the world cup while I was there. Yes, the <b>World Cup</b>. <br /><br />It was pretty awesome to say the least. I constantly get asked what my favorite countries were, and even though it's practically impossible to answer that, to make things less complicated I usually say:</p>
+		<div class="country-flags">
+			<ol>
+				<li><b>Spain</b><br /><a href="https://www.google.com/search?q=spain&source=lnms&tbm=isch&sa=X&ei=HN1WU8OxLIKLyAS5-oG4DQ&ved=0CAYQ_AUoAQ&biw=1420&bih=762"><img class="flag_image" src="images/spain_flag.gif" /></a></li>
+				<li><b>Germany</b><br /><a href="https://www.google.com/search?q=germany&es_sm=91&source=lnms&tbm=isch&sa=X&ei=bN1WU8iuF9KRyASnpYGIDg&ved=0CAgQ_AUoAQ&biw=1420&bih=762"><img class="flag_image" src="images/germany_flag.gif" /></a></li>
+				<li><b>Switzerland</b><br /><a href="https://www.google.com/search?q=germany&es_sm=91&source=lnms&tbm=isch&sa=X&ei=bN1WU8iuF9KRyASnpYGIDg&ved=0CAgQ_AUoAQ&biw=1420&bih=762#q=switzerland&tbm=isch"><img class="flag_image" src="images/switzerland_flag.jpeg" /></a></li>
+			</ol>
+			<br />
+		</div>
 		<p>All of the countries I visited were <i>awesome</i> in their own way, but those three, in that order, were some of my favorites. Whilst traveling as a poor college student, I was trying to be as thrifty as possible. Outlined below in no particular order are a few methods I suggest to save some money. They all worked for me in their own way.</p>
 		<ul>
 			<li><a href="http://www.eurail.com/" target="_blank">Eurail</a></li>
@@ -38,8 +28,20 @@
 			<li><a href="https://www.airbnb.com/" target="_blank">Airbnb.com</a></li>
 			<li>Make lots of friends.</li>
 		</ul>
-		<p>The list above is just a few suggestion I would have for you when looking to travel. If you are thinking about traveling anytime soon, or just want some more info, feel free to <a href="mailto:patrickscottreynolds@gmail.com">email me</a> with any questions!</p>
+		<br />
+		<p>The list above is just a few suggestions I would have for you when looking to travel. If you are thinking about traveling anytime soon, or just want some more info, feel free to <a href="mailto:patrickscottreynolds@gmail.com">email me</a> with any questions!</p>
 
+		<br />
 		<p>P.s. If you don't want to take it from me, my friend, Alex, has a great <a href="http://loveandluggage.com">travel blog</a>. You might want to pick up some tips and tricks from her.</p>
+	</section>
+
+	<div class="header-example-section">
+		<h1 class="header-example" id="header-1">Largest</h1>
+		<h2 class="header-example" id="header-2">Larger</h2>
+		<h3 class="header-example" id="header-3">Large</h3>
+		<h4 class="header-example" id="header-4">Small</h4>
+		<h5 class="header-example" id="header-5">Smaller</h5>
+		<h6 class="header-example" id="header-6">Smallest</h6>
+	</div>
 	</body>
 </html>
