@@ -1,0 +1,65 @@
+<!--
+- Header, content area, sidebar, and a footer using divs 
+- Spans
+- Add padding, borders, and margins
+- Center your content area in the browser
+- Add width and height to divs and give them ids
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Patrick's Blog</title>
+		<link rel="stylesheet" type="text/css" href="stylesheets/week1_technical_blog.css">
+	</head>
+	<body>
+		<div class="header">
+			<div class="wrapper">
+				<h1>Patrick's Blog</h1>
+			</div>
+		</div>
+		<div class="wrapper">
+			<div class="sidebar">
+				<ul class="sidebar-nav">
+					<li class="sidebar-nav-element html-nav-element"><a href="#">HTML</a></li>
+					<li class="sidebar-nav-element css-nav-element"><a href="#">CSS</a></li>
+					<li class="sidebar-nav-element javascript-nav-element"><a href="#">Javascript</a></li>
+					<li class="sidebar-nav-element ror-nav-element"><a href="#">Ruby on Rails</a></li>
+				</ul>
+			</div>
+			<div class="content">
+				<div class="article">
+					<div class="article-header css-style">Custom CSS Classes</div>
+						<div class="article-header-details">April 23, 2014 - 12:53pm</div>
+						<div class="article-content">Well thought out css classes can not only speed up your development, but they can eliminate all kinds of confusion down the road. Looking at CSS in an "object oriented" sense might be a bit complicated at first, but after practicing the art of abstraction, things start to become second nature. I can't entirely speak from experience yet, but it's definitley a work in progress.<br />The image to <img class="article-image" src="images/css-class-example.png" /> the left is an example about how you might want to think about structuring css classes. This is actually an early example of the very css that syles this blog post. Each blog post is considered an article, each article has a title and info, and each article has content. For each of these classes, we can define a new class that contains attributes that are only associated with that specific element. By writing "modular" classes, we can reuse them as needed for other places in our styling. For example, the image within this paragraph as particular attributes associated with in that one would commonly want to use for an image embedded in a piece of text. This allows yourself, or other developers, to use the "article-image" class for future development. This allows a team to work faster, stay organized, and increase overall efficiency.</div>
+						<span class="article-callout">&lt;- General styling</span>
+						<span class="article-header-callout">&lt;- Haeder details</span>
+						<span class="article-header-details-callout">&lt;- Article Details</span>
+				</div>
+				<div class="article">
+					<div class="article-header html-style">Structuring HTML Pages</div>
+						<div class="article-header-details">April 22, 2014 - 12:53pm</div>
+						<div class="article-content">Elaborate on the general structure that makes up an html page.</div>
+				</div>
+				<div class="article">
+					<div class="article-header css-style">Using external CSS links</div>
+						<div class="article-header-details">April 20, 2014 - 12:53pm</div>
+						<div class="article-content">Describe how an external link is used to retrieve css stylesheets, or script links are used to retrieve javascript files.</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+				<div class="wrapper">
+					<div class="footer-name">Patrick Reynolds</div>
+					<div class="social-media-links">
+						<ul>
+							<li><a href="http://www.facebook.com/patricl.reynolds.161"><span class="facebook"></span></a></li>
+							<li><a href="http://www.linkedin.com/in/patrickscottreynolds"><span class="linkedin"></span></a></li>
+							<li><a href="http://twitter.com/patrickr3ynolds"><span class="twitter"></span></a></li>
+							<li><a href="http://github.com/patrickreynolds"><span class="github"></span></a></li>
+							<li><a href="http://google.com"><span class="google-plus"></span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+	</body>
+</html>
