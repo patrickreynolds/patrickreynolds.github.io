@@ -1,8 +1,7 @@
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:600);
-
 /* General Styles */
 body {
   background-color: rgb(241, 241, 241);
+  font-family: 'Lato', Arial, sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.2em;
@@ -19,12 +18,12 @@ a {
   color: #1D766F;
   text-decoration: none;
 }
-
 a:hover {
-  color: black;
+  color: #BC2F36;
 }
 
 h1 {
+  font-family: 'Audiowide', cursive;
   font-size: 2.2em;
   float: left;
   line-height: 75px;
@@ -33,6 +32,7 @@ h1 {
 h2 {
   background-color: rgb(60, 60, 60);
   color: #FFF;
+  font-family: 'Quicksand', sans-serif;
   font-size: 2.4em;
   font-weight: 400;
   line-height: 80px;
@@ -41,6 +41,7 @@ h2 {
 }
 
 h3 {
+  font-family: 'Quicksand', sans-serif;
   font-size: 1.4em;
   font-weight: 700;
   margin: 0 0 0.3em 0;
@@ -53,6 +54,7 @@ h4 {
   text-align: center;
 }
 
+
 /* Navigation */
 nav li {
   float: left;
@@ -63,9 +65,13 @@ nav li a {
   padding: 5px 10px;
   text-decoration: none;
 }
+nav li a:hover {
+  color: #FB000D;
+}
 
 .jump {
   color: #565656;
+  font-family: 'EntypoRegular';
   font-size: 70px;
   line-height: 80px;
   position: absolute;
@@ -77,6 +83,9 @@ nav li a {
 }
 .jump.down {
   right: 15px;
+}
+.jump:hover {
+  color: #BC2F36;
 }
 
 
@@ -98,6 +107,9 @@ header nav {
 header nav li {
   line-height: 75px;
 }
+header nav a:hover {
+  background-color: #fff;
+}
 
 header:after {
   /* clearfix hack */
@@ -108,7 +120,7 @@ header:after {
 
 
 /* Main */
-#main div {
+#main section {
   margin-bottom: 1em;
   position: relative;
 }
@@ -117,6 +129,7 @@ header:after {
     max-width:1400px;
     margin: 0 auto;
 }
+
 
 #main section:after {
   /* clearfix hack */
@@ -127,7 +140,7 @@ header:after {
 
 
 /* Famous Women */
-#famous div.woman {
+#famous article.woman {
   background-color: white;
   float: left;
   min-height: 250px;
@@ -136,25 +149,21 @@ header:after {
   width: 27.33%;
 }
 
-#famous div.break {
+#famous article.break {
   clear: both;
 }
 
-#famous div img {
+#famous article img {
   display: block;
   margin: 1em auto;
   width: 100%;
-}
-
-/* Font Face */
-#famous .woman h3 {
-  font-family: 'Source Sans Pro', sans-serif;
 }
 
 
 /* Organizations */
 #organizations {
   clear: both;
+  height: 500px;
 }
 
 #organizations ul {
@@ -168,6 +177,14 @@ header:after {
   padding-left: 5px;
   max-width: 50%;
 }
+#organizations ul li:before {
+  color: #FB000D;
+  content: '6';
+  font-family: 'EntypoRegular';
+  font-size: 40px;
+  padding-right: 10px;
+}
+
 #organizations img {
   position: absolute;
   right: 20px;
@@ -179,6 +196,7 @@ header:after {
   display: block;
 }
 
+
 /* Fun Facts */
 #facts ul {
   margin: 50px;
@@ -189,7 +207,16 @@ header:after {
   margin-bottom: 1em;
   padding-left: 5px;
 }
-
+#facts ul li:before {
+  color: #FFA700;
+  content: '7';
+  font-family: 'EntypoRegular';
+  font-size: 30px;
+  padding-right: 10px;
+}
+#facts ul li:hover:before {
+  color: #FF6F00;
+}
 
 
 /* Footer */
@@ -197,10 +224,14 @@ footer {
   background-color: #00665F;
 }
 
-footer nav {
+footer .nav {
   float: left;
   font-size: 1.1em;
   margin: 10px;
+}
+
+footer nav a:hover {
+  color: #FFEECC;
 }
 
 footer:after {
@@ -208,4 +239,17 @@ footer:after {
   content: "";
   display: table;
   clear: both;
+}
+
+
+/* Fonts */
+@font-face {
+  font-family: 'EntypoRegular';
+  src: url('font/Entypo-webfont.eot');
+  src: url('font/Entypo-webfont.eot?#iefix') format('embedded-opentype'),
+       url('font/Entypo-webfont.woff') format('woff'),
+       url('font/Entypo-webfont.ttf') format('truetype'),
+       url('font/Entypo-webfont.svg#EntypoRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
