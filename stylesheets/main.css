@@ -1,0 +1,230 @@
+/*---- Generic ----*/
+.container {
+	max-width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+a {
+	color: #428bca;
+	text-decoration: none;
+}
+/*---- Close Generic ----*/
+
+/*---- Header ----*/
+header {
+	height: 80px;
+	width: 100%;
+	overflow: hidden;
+	border-bottom: 1px solid #c8c8c8;
+	position: relative;
+}
+
+
+.site-title {
+	height: 80px;
+	width: 300px;
+	float: left;
+	display: block;
+	font-size: 40px;
+	padding-top: 20px;
+	color: black;
+}
+
+.header-nav {
+	height: 40px;
+	width: 600px;
+	float: right;
+	margin-top: 30px;
+}
+
+.header-nav-list {
+	list-style: none;
+	display: block;
+}
+
+.header-nav-element {
+	float: left;
+	width: 120px;
+	margin-right: 19px;
+	padding-right: 10px;
+	font-size: 20px;
+	text-align: center;
+}
+
+.divider {
+	border-right: 1px solid gray;
+}
+/*---- Closing Header ----*/
+
+/*---- Primary Content ----*/
+
+section {
+	width: 100%;
+	height: 600px;
+}
+
+.project-pod {
+	margin: 20px 5%;
+	min-height: 20px;
+	padding: 18px;
+	background-color: #f5f5f5;
+	border: 1px solid #e3e3e3;
+	border-radius: 4px;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.project-pod-header {
+	font-size: 20px;
+	font-weight: bold;
+	display: inline-block;
+}
+
+.project-list {
+	margin-top: 15px;
+}
+
+.project {
+	margin: 0 0 15px 0;
+}
+/*---- Closing Primary Content ----*/
+
+/*---- Footer ----*/
+
+footer {
+	height: 80px;
+	width: 100%;
+	overflow: hidden;
+	border-top: 1px solid #c8c8c8;
+	clear: all;
+}
+
+.social-media-links {
+	height: 60px;
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	position: relative;
+}
+
+.social-media-links-list {
+	clear: left;
+	float: left;
+	position: relative;
+	left: 50%;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.social-media-links li {
+	float: left;
+	display: block;
+	position: relative;
+ 	margin: 0 2px;
+ 	right: 50%;
+}
+
+.social-media-links li a {
+	display: block;
+  background: linear-gradient(#fff, #eee);
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  display: block;
+  padding: 2px;
+}
+
+.social-media-links li a:hover {
+  border-color: #999;
+}
+
+li span {
+  background: url("../images/social-media-sprite.jpg") 0 0 no-repeat;
+  color: transparent;
+  display: block;
+  font: 0/0 a;
+  height: 35px;
+  width: 35px;
+}
+
+.facebook {
+  background-position: -308px -55px;
+}
+
+.facebook:hover {
+  background-position: -74px -55px;
+}
+
+.linkedin {
+  background-position: -349px -55px;
+}
+
+.linkedin:hover {
+  background-position: -114px -55px;
+}
+
+.twitter {
+  background-position: -389px -55px;
+}
+
+.twitter:hover {
+  background-position: -154px -55px;
+}
+
+.github {
+  background-position: -349px -95px;
+}
+
+.github:hover {
+  background-position: -114px -95px;
+}
+
+.google-plus {
+  background-position: -389px -135px;
+}
+
+.google-plus:hover {
+  background-position: -154px -135px;
+}
+
+/*---- Closing Footer ----*/
+
+/*---- Responsive design for mobile devices ----*/
+@media screen and (max-width: 900px) {
+	header {
+		height: 200px;
+	}
+
+	.site-title {
+		width: 100%;
+		height: 30px;
+		text-align: center;
+	}
+
+	.site-title a {
+		font-size: 30px;
+	}
+
+	.header-nav {
+		width: 100%;
+	}
+
+	.header-nav-element {
+		width: 49%;
+		height: 40px;
+		padding: 10px 0 0 0;
+		margin: 0px;
+	}
+
+	.header-nav-element:right {
+		border-right: 1px solid #c8c8c8;
+	}
+
+	.divider {
+		border: none;
+	}
+
+	.mobile-divider {
+		border-right: 1px solid #c8c8c8;
+	}
+}
+/*---- Closing responsive design ----*/
