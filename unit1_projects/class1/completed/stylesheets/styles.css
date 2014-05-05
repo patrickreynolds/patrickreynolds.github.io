@@ -7,7 +7,6 @@ body {
   font-weight: 300;
   line-height: 1.2em;
   margin: 0px auto;
-  min-width: 960px;
   width: 100%;
 }
 
@@ -110,7 +109,7 @@ header:after {
 /* Main */
 #main div {
   margin-bottom: 1em;
-  position: relative;
+  /*position: relative;*/
 }
 #main div.wrapper{
     width: 100%;
@@ -127,17 +126,12 @@ header:after {
 
 
 /* Famous Women */
-#famous div.woman {
+.woman-column {
   background-color: white;
-  float: left;
-  min-height: 250px;
   margin: 1%;
   padding: 2%;
-  width: 27.33%;
-}
-
-#famous div.break {
-  clear: both;
+  width: 27%;
+  display: inline-block;
 }
 
 #famous div img {
@@ -190,14 +184,12 @@ header:after {
   padding-left: 5px;
 }
 
-
-
 /* Footer */
 footer {
   background-color: #00665F;
 }
 
-footer nav {
+footer nav 
   float: left;
   font-size: 1.1em;
   margin: 10px;
@@ -209,3 +201,27 @@ footer:after {
   display: table;
   clear: both;
 }
+
+
+/* Media queries */
+
+@media screen and (max-width: 960px) {
+ .woman-column {
+    width: 44%;
+    float: left;
+  }
+}
+/* Tablet View */
+@media screen and (max-width: 600px) {
+  .woman-column {
+    width: 92%;
+  }
+}
+/* Close tablet view */
+/* Mobile View */
+
+/* Close mobile view */
+
+/* Close Media queries */
+
+
