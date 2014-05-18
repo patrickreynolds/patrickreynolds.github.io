@@ -1,0 +1,233 @@
+body,
+html {
+  margin:0;
+  padding:0;
+  color:#000;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.header {
+  height: 70px;
+  margin-bottom: 20px;
+  padding:5px 10px;
+  border-bottom: 1px solid #c8c8c8;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.25);
+}
+
+.page-title {
+	font-style: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 850px;
+}
+
+.sidebar {
+  float:left;
+  width:200px;
+}
+
+.sidebar h2 {
+  padding: 10px;
+  text-align: center;
+}
+
+.sidebar-nav {
+  margin-left: -40px;
+}
+
+.sidebar-nav-element {
+  color: #777;
+  font-weight: bold;
+  padding-top: 10px;
+  text-align: center;
+  height: 30px;
+}
+
+.html-style {
+  color: #0266C8;
+}
+
+.css-style {
+  color: #F90101;
+}
+
+.javascript-style {
+  color: #F2B50F;
+}
+
+.ror-style {
+  color: #00933B;
+}
+
+.sidebar-nav-element a {
+  color: inherit;
+}
+
+.html-nav-element:hover {
+  border-left: 3px solid #0266C8;
+  color: #0266C8;
+}
+
+.css-nav-element:hover {
+  border-left: 3px solid #F90101;
+  color: #F90101;
+}
+
+.javascript-nav-element:hover {
+  border-left: 3px solid #F2B50F;
+  color: #F2B50F;
+}
+
+.ror-nav-element:hover {
+  border-left: 3px solid #00933B;
+  color: #00933B;
+}
+
+.content {
+  float:left;
+  width:600px;
+  padding:10px 10px 10px 10px;
+  margin-bottom: 20px;
+  border: 1px solid #c8c8c8;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.25);
+  border-radius: 5px;
+}
+
+.article {
+  display: block;
+  position: relative;
+  height: 100%;
+  padding-bottom: 20px;
+  margin: 10px;
+  border-bottom: 3px solid #c8c8c8;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.25);
+}
+
+.article-header {
+  font-size: 24pt;
+  margin: 0px 0px 5px 0px;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.article-header-details {
+  font-size: 14px;
+  margin: 0px 0px 5px 0px;
+  padding: 0px 0px 0px 20px;
+  color: #777;
+}
+
+.article-content {
+  clear: both;
+  margin: 10px 0px 10px 0px;
+  padding: 20px;
+  overflow: auto;
+}
+
+.article-image {
+  display: inline-block;
+  float: left;
+  height: 300px;
+  width: 300px;
+  padding: 15px;
+}
+
+.footer {
+  text-align: center;
+  height: 100px;
+  clear:both;
+  padding:5px 10px;
+  border-top: 1px solid #c8c8c8;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.25);
+}
+
+.footer-name {
+  font-size: 24px;
+}
+
+.social-media-links {
+  text-align: center;
+  display: inline-block;
+}
+
+.social-media-links ul {
+  height: 50px;
+  display: block;
+  margin-left: -28px;
+}
+
+.social-media-links li {
+  float: left;
+  list-style: none;
+  margin: 0 2px;
+}
+
+.social-media-links li a {
+  background: linear-gradient(#fff, #eee);
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  display: block;
+  padding: 2px;
+}
+
+.social-media-links li a:hover {
+  border-color: #999;
+}
+
+li span {
+  background: url("../images/social-media-sprite.jpg") 0 0 no-repeat;
+  color: transparent;
+  display: block;
+  font: 0/0 a;
+  height: 35px;
+  width: 35px;
+}
+
+.facebook {
+  background-position: -308px -55px;
+}
+
+.facebook:hover {
+  background-position: -74px -55px;
+}
+
+.linkedin {
+  background-position: -349px -55px;
+}
+
+.linkedin:hover {
+  background-position: -114px -55px;
+}
+
+.twitter {
+  background-position: -389px -55px;
+}
+
+.twitter:hover {
+  background-position: -154px -55px;
+}
+
+.github {
+  background-position: -349px -95px;
+}
+
+.github:hover {
+  background-position: -114px -95px;
+}
+
+.google-plus {
+  background-position: -389px -135px;
+}
+
+.google-plus:hover {
+  background-position: -154px -135px;
+}
